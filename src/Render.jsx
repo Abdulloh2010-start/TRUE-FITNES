@@ -6,6 +6,7 @@ import Contact from './pages/Contact/Contact';
 import Brand from './pages/Brand/Brand';
 import Likes from './pages/Likes/Likes';
 import Club from './pages/Club/Club';
+import NotFound from './pages/NotFound';
 
 export default function App() {
     return (
@@ -19,6 +20,7 @@ export default function App() {
                         <Route path="/likes" element={<Likes />} />
                         <Route path="/club" element={<Club />} />
                         <Route path="/contact" element={<Contact />} />
+                        <Route path="*" element={<NotFound />} />
                     </Routes>
                 </main>
                 <Footer />
